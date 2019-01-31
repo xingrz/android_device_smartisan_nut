@@ -1,5 +1,11 @@
 [
   {
+    "remote": "omnirom",
+    "repository": "android_vendor_qcom_opensource_commonsys",
+    "target_path": "vendor/qcom/opensource/commonsys",
+    "revision": "android-9.0"
+  },
+  {
     "remote": "aosp",
     "repository": "platform/prebuilts/gcc/darwin-x86/arm/arm-eabi-4.8",
     "target_path": "prebuilts/gcc/darwin-x86/arm/arm-eabi-4.8",
