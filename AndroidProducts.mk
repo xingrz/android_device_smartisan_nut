@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/mk_nut.mk
+    $(LOCAL_DIR)/omni_nut.mk
