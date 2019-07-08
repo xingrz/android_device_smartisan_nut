@@ -14,17 +14,5 @@
 # limitations under the License.
 #
 
-# Release name
-PRODUCT_RELEASE_NAME := ocean
-
-# Inherit from those products. Most specific first.
-$(call inherit-product, build/target/product/embedded.mk)
-
-# Inherit some common MK stuff.
-$(call inherit-product, vendor/mk/config/common.mk)
-
-PRODUCT_NAME := mk_nut
-PRODUCT_BRAND := SMARTISAN
-PRODUCT_DEVICE := nut
-PRODUCT_MANUFACTURER := smartisan
-PRODUCT_MODEL := YQ60X
+PRODUCT_MAKEFILES := \
+    $(LOCAL_DIR)/omni_nut.mk
