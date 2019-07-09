@@ -53,7 +53,7 @@ BOARD_CUSTOM_BOOTIMG_MK := $(DEVICE_PATH)/mkbootimg.mk
 TARGET_KERNEL_ARCH := arm
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-androideabi-
 TARGET_KERNEL_SOURCE := kernel/smartisan/msm8939
-TARGET_KERNEL_CONFIG := mokee_nut_defconfig
+TARGET_KERNEL_CONFIG := msm8916-perf_defconfig
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 16777216
