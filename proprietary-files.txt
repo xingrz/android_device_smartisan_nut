@@ -402,6 +402,9 @@ etc/firmware/cpp_firmware_v1_1_6.fw:vendor/firmware/cpp_firmware_v1_1_6.fw
 etc/firmware/cpp_firmware_v1_2_0.fw:vendor/firmware/cpp_firmware_v1_2_0.fw
 etc/firmware/cpp_firmware_v1_4_0.fw:vendor/firmware/cpp_firmware_v1_4_0.fw
 
+# Keymaster
+lib/hw/keystore.qcom.so:vendor/lib/hw/keystore.msm8916.so
+
 # Media firmware
 etc/firmware/venus.b00:vendor/firmware/venus.b00
 etc/firmware/venus.b01:vendor/firmware/venus.b01
