@@ -121,8 +121,10 @@ BOARD_RAMDISK_OFFSET := 0x01000000
 BOARD_KERNEL_IMAGE_NAME := zImage
 BOARD_KERNEL_SEPARATED_DT := true
 
+KERNEL_TOOLCHAIN := $(shell pwd)/prebuilts/gcc/$(HOST_PREBUILT_TAG)/arm/arm-eabi-4.8/bin
+
 TARGET_KERNEL_ARCH := arm
-TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-androideabi-
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-eabi-
 TARGET_KERNEL_SOURCE := kernel/smartisan/msm8939
 TARGET_KERNEL_CONFIG := mokee_nut_defconfig
 

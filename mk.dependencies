@@ -1,5 +1,13 @@
 [
   {
+    "repository": "android_prebuilts_gcc_darwin-x86_arm_arm-eabi-4.8",
+    "target_path": "prebuilts/gcc/darwin-x86/arm/arm-eabi-4.8"
+  },
+  {
+    "repository": "android_prebuilts_gcc_linux-x86_arm_arm-eabi-4.8",
+    "target_path": "prebuilts/gcc/linux-x86/arm/arm-eabi-4.8"
+  },
+  {
     "repository": "android_kernel_smartisan_msm8939",
     "target_path": "kernel/smartisan/msm8939"
   },
