@@ -1,0 +1,10 @@
+[
+  {
+    "repository": "android_kernel_smartisan_msm8939",
+    "target_path": "kernel/smartisan/msm8939"
+  },
+  {
+    "repository": "android_vendor_smartisan_nut",
+    "target_path": "vendor/smartisan/nut"
+  }
+]
