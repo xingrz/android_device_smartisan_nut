@@ -49,3 +49,8 @@ extract "$MY_DIR"/proprietary-files.txt "$SRC" "$SECTION"
 extract "$MY_DIR"/proprietary-files-qc.txt "$SRC" "$SECTION"
 
 "$MY_DIR"/setup-makefiles.sh
+
+BLOB_ROOT="$MK_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary
+
+# Thermal
+sed -i 's|/system/etc/|/vendor/etc/|g' $BLOB_ROOT/vendor/bin/thermal-engine
