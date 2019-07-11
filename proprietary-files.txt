@@ -418,5 +418,8 @@ etc/firmware/venus.mdt:vendor/firmware/venus.mdt
 vendor/firmware/libpn547_fw.so
 
 # Sensors
-lib/hw/sensors.msm8916.so
-lib/hw/sensors_bosch.msm8916.so
+lib/hw/sensors.msm8916.so:vendor/lib/sensors.nut.so
+lib/hw/sensors_bosch.msm8916.so:vendor/lib/sensors_bosch.msm8916.so
+vendor/etc/calmodule.cfg
+vendor/lib/libcalmodule_akm.so
+vendor/lib/libcalmodule_gyroscope.so
