@@ -1,4 +1,5 @@
-# Copyright (c) 2009-2012, 2014, The Linux Foundation. All rights reserved.
+#!/system/bin/sh
+# Copyright (c) 2009-2015, The Linux Foundation. All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are met:
@@ -25,24 +26,24 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
-on init
-    export LD_PRELOAD libshim_atomic.so
+target=`getprop ro.board.platform`
 
-on charger
-    wait /dev/block/bootdevice/by-name/system
-    mount ext4 /dev/block/bootdevice/by-name/system /system ro barrier=1
-    chown root system /sys/class/power_supply/bms/current_now
-    chown root system /sys/class/power_supply/bms/voltage_ocv
-    chmod 0664 /sys/class/power_supply/bms/current_now
-    chmod 0664 /sys/class/power_supply/bms/voltage_ocv
-    start vm_bms
+start_vm_bms()
+{
+	if [ -e /dev/vm_bms ]; then
+		chown -h root.system /sys/class/power_supply/bms/current_now
+		chown -h root.system /sys/class/power_supply/bms/voltage_ocv
+		chmod 0664 /sys/class/power_supply/bms/current_now
+		chmod 0664 /sys/class/power_supply/bms/voltage_ocv
+		start vm_bms
+	fi
+}
 
-service vm_bms /vendor/bin/vm_bms
-    user root
-    group root
-    disabled
-
-service bms-sh /vendor/bin/sh /vendor/bin/init.qcom.bms.sh
-    class core
-    user root
-    oneshot
+case "$target" in
+    "msm8916")
+        start_vm_bms
+        ;;
+    "msm8909")
+        start_vm_bms
+        ;;
+esac
