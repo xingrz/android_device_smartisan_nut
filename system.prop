@@ -1,4 +1,5 @@
 # Audio
+audio.dolby.ds2.enabled=true
 af.fast_track_multiplier=1
 audio.deep_buffer.media=true
 audio.offload.min.duration.secs=30
@@ -12,6 +13,14 @@ vendor.audio.offload.buffer.size.kb=64
 vendor.audio.offload.gapless.enabled=true
 vendor.audio_hal.period_size=192
 vendor.voice.path.for.pcm.voip=true
+ro.dirac.acs.controller=afm
+ro.dirac.acs.ignore_error=1
+ro.dirac.afm.mode=local
+ro.dirac.max_active.headset=3
+ro.dirac.max_active.powersound=3
+ro.fm.transmitter=false
+tunnel.audio.encode=false
+use.voice.path.for.pcm.voip=true
 
 ro.config.media_vol_steps=25
 ro.config.vc_call_vol_steps=7
