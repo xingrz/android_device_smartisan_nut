@@ -28,3 +28,8 @@ PRODUCT_BRAND := SMARTISAN
 PRODUCT_DEVICE := nut
 PRODUCT_MANUFACTURER := smartisan
 PRODUCT_MODEL := YQ60X
+
+# Sign bootable images
+PRODUCT_SUPPORTS_VERITY := true
+PRODUCT_SUPPORTS_BOOT_SIGNER := true
+PRODUCT_VERITY_SIGNING_KEY := build/target/product/security/verity
