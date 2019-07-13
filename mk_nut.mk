@@ -38,3 +38,8 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="msm8916_32-user 5.1.1 LMY47V 1 release-keys"
 
 BUILD_FINGERPRINT := SMARTISAN/msm8916_32:5.1.1/LMY47V/1:user/release-keys
+
+# Sign bootable images
+PRODUCT_SUPPORTS_VERITY := true
+PRODUCT_SUPPORTS_BOOT_SIGNER := true
+PRODUCT_VERITY_SIGNING_KEY := build/target/product/security/verity
