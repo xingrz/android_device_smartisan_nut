@@ -139,6 +139,7 @@ ro.ril.ct_sw_version=v2.0.0
 ro.ril.ecclist=911,112,000,08,110,118,119,999,120,122
 ro.telephony.call_ring.multiple=false
 ro.telephony.default_network=22,1
+ro.telephony.ril.config=simactivation
 telephony.lteOnCdmaDevice=1
 
 # Sensors
