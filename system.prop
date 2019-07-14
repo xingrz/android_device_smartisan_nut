@@ -49,6 +49,7 @@ vendor.qcom.bluetooth.soc=pronto
 ro.bluetooth.dun=true
 ro.bluetooth.hfp.ver=1.7
 ro.bluetooth.sap=true
+ro.boot.btmacaddr=00:00:00:00:00:00
 ro.qualcomm.bt.hci_transport=smd
 
 # Camera
