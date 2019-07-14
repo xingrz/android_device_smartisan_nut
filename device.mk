@@ -114,11 +114,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fs_config_files
 
-# FM
-PRODUCT_PACKAGES += \
-    FMRadio \
-    libfmjni
-
 # GPS
 PRODUCT_PACKAGES += \
     gps.msm8916 \
