@@ -120,7 +120,7 @@ def AddBasebandAssertion(info):
   if m:
     versions = m.group(1).split('|')
     if len(versions) and '*' not in versions:
-      cmd = 'assert(cm.verify_baseband(' + ','.join(['"%s"' % baseband for baseband in versions]) + ') == "1");'
+      cmd = 'assert(nut.verify_baseband(' + ','.join(['"%s"' % baseband for baseband in versions]) + ') == "1");'
       info.script.AppendExtra(cmd)
   return
 
@@ -134,6 +134,6 @@ def AddTrustZoneAssertion(info):
   if m:
     versions = m.group(1).split('|')
     if len(versions) and '*' not in versions:
-      cmd = 'assert(cm.verify_trustzone(' + ','.join(['"%s"' % tz for tz in versions]) + ') == "1");'
+      cmd = 'assert(nut.verify_trustzone(' + ','.join(['"%s"' % tz for tz in versions]) + ') == "1");'
       info.script.AppendExtra(cmd)
   return

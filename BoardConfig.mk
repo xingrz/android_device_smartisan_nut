@@ -147,7 +147,7 @@ MALLOC_SVELTE := true
 TARGET_RIL_VARIANT := caf
 
 # Recovery
-TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_cm
+TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_nut
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/init/vendor/etc/fstab.qcom
 BOARD_NO_SECURE_DISCARD := true
 
