@@ -149,6 +149,9 @@ BOARD_NO_SECURE_DISCARD := true
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 
+# SELinux
+BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
+
 # Shims
 TARGET_LD_SHIM_LIBS := \
     /system/vendor/bin/mm-qcamera-daemon|libshim_camera.so \
