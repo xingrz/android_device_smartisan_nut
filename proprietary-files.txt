@@ -97,7 +97,7 @@ vendor/lib/libmmcamera2_stats_algorithm.so
 vendor/lib/libmmcamera2_stats_modules.so
 vendor/lib/libmmcamera2_vpe_module.so
 vendor/lib/libmmcamera2_wnr_module.so
-vendor/lib/libmmjpeg.so|159dac7e57174dfd6fd2820499d5cef4b3f05112
+vendor/lib/libmmjpeg.so|cb21a0ef6751578c52e450dc612a7a894a5c4746
 vendor/lib/libmmqjpeg_codec.so|716d4df63afba2a3c791e5f84ffe5da1fb96267e
 vendor/lib/liboemcamera.so
 vendor/lib/libqomx_jpegdec.so|770c342249043ee44d8e645bc4b4973ade62f78e
