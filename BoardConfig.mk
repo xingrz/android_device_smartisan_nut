@@ -146,7 +146,7 @@ MALLOC_SVELTE := true
 
 # Recovery
 TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_nut
-TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/init/vendor/etc/fstab.qcom
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/recovery.fstab
 BOARD_NO_SECURE_DISCARD := true
 
 # Releasetools
