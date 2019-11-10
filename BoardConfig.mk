@@ -163,6 +163,7 @@ BOARD_SEPOLICY_DIRS += \
 TARGET_LD_SHIM_LIBS := \
     /system/vendor/bin/mm-qcamera-daemon|libshim_camera.so \
     /system/vendor/bin/perfd|libshim_atomic.so \
+    /system/vendor/lib/hw/camera.vendor.msm8916.so|libshim_atomic.so \
     /system/vendor/lib/libflp.so|libshims_flp.so \
     /system/vendor/lib/libizat_core.so|libshims_get_process_name.so
 
